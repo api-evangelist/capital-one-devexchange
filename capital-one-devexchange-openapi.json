@@ -1,0 +1,1751 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Capital One DevExchange",
+        "description": "Nessie is Capital One???s Hackathon API that gives you access to a multitude of real public-facing data - such as ATM and bank branch locations - along with mock customer account data. Use HTTP requests to set up peer-to-peer transactions, simulate a weekly paycheck, or even schedule bills for customers! This is all structured in a way that resembles how we actually run things here at Capital One.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsapi.reimaginebanking.com\/"
+    ],
+    "paths": {
+        "\/accounts": {
+            "get": {
+                "summary": "Get all accounts",
+                "description": "Returns the accounts that have been assigned to you.",
+                "operationId": "ReturnsTheAccountsThatHaveBeenAssignedToYou",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Empty Param will return all types of accounts. Type of accounts that can be fetched (options: Credit Card, Savings, Checking)"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{id}": {
+            "get": {
+                "summary": "Get account by id",
+                "description": "Returns the account with the specific id",
+                "operationId": "ReturnsTheAccountWithTheSpecificId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a specific existing account",
+                "description": "Updates the specific account",
+                "operationId": "UpdatesTheSpecificAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete a specific existing account",
+                "description": "Deletes the specific account",
+                "operationId": "DeletesTheSpecificAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            }
+        },
+        "\/customers\/{id}\/accounts": {
+            "post": {
+                "summary": "Create an account",
+                "description": "Creates an account for the customer with the id provided",
+                "operationId": "CreatesAnAccountForTheCustomerWithTheIdProvided",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            },
+            "get": {
+                "summary": "Get accounts by customer id",
+                "description": "Returns the accounts associated with the specific customer",
+                "operationId": "ReturnsTheAccountsAssociatedWithTheSpecificCustomer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{id}\/customer": {
+            "get": {
+                "summary": "Get customer that owns the specified account",
+                "description": "Returns the customer that the account belongs to.",
+                "operationId": "ReturnsTheCustomerThatTheAccountBelongsTo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            }
+        },
+        "\/atms": {
+            "get": {
+                "summary": "Get all ATMs",
+                "description": "Returns all of the Capital One ATMs in the speified search area.",
+                "operationId": "ReturnsAllOfTheCapitalOneAtmsInTheSpeifiedSearchArea",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lat",
+                        "in": "query",
+                        "description": "Latitude of where you're looking for an ATM. Remember Negatives for West"
+                    },
+                    {
+                        "name": "lng",
+                        "in": "query",
+                        "description": "Longitude of where you're looking for an ATM. Remember Negatives for South"
+                    },
+                    {
+                        "name": "rad",
+                        "in": "query",
+                        "description": "Search radius in miles"
+                    }
+                ]
+            }
+        },
+        "\/atms\/{id}": {
+            "get": {
+                "summary": "Get ATM by id",
+                "description": "Returns the ATM with the specific id",
+                "operationId": "ReturnsTheAtmWithTheSpecificId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{id}\/bills": {
+            "get": {
+                "summary": "Get all bills for a specific account",
+                "description": "Returns the bills that are tied to the specific account.",
+                "operationId": "ReturnsTheBillsThatAreTiedToTheSpecificAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a bill",
+                "description": "Creates a bill for the specific account",
+                "operationId": "CreatesABillForTheSpecificAccount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            }
+        },
+        "\/bills\/{billId}": {
+            "get": {
+                "summary": "Get bill by id",
+                "description": "Returns the bill with the specific id",
+                "operationId": "ReturnsTheBillWithTheSpecificId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "billId",
+                        "in": "path",
+                        "description": "ID of the bill to fetch"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a specific existing bill",
+                "description": "Updates the specific bill",
+                "operationId": "UpdatesTheSpecificBill",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "billId",
+                        "in": "path",
+                        "description": "ID of the bill to fetch"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete a specific existing bill",
+                "description": "Deletes the specific bill",
+                "operationId": "DeletesTheSpecificBill",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "billId",
+                        "in": "path",
+                        "description": "ID of the bill to fetch"
+                    }
+                ]
+            }
+        },
+        "\/branches": {
+            "get": {
+                "summary": "Get all branches",
+                "description": "Returns all of the Capital One branches.",
+                "operationId": "ReturnsAllOfTheCapitalOneBranches",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/branches\/{id}": {
+            "get": {
+                "summary": "Get branch by id",
+                "description": "Returns the branch with the specific id",
+                "operationId": "ReturnsTheBranchWithTheSpecificId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            }
+        },
+        "\/customers": {
+            "get": {
+                "summary": "Get all customers",
+                "description": "Returns the customers that have been assigned to you.",
+                "operationId": "ReturnsTheCustomersThatHaveBeenAssignedToYou",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Create a customer",
+                "description": "Creates a customer",
+                "operationId": "CreatesACustomer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            }
+        },
+        "\/customers\/{id}": {
+            "get": {
+                "summary": "Get customer by id",
+                "description": "Returns the customer with the specific id",
+                "operationId": "ReturnsTheCustomerWithTheSpecificId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a specific existing customer",
+                "description": "Updates the specific customer",
+                "operationId": "UpdatesTheSpecificCustomer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            }
+        },
+        "\/customers\/{id}\/bills": {
+            "get": {
+                "summary": "Get bills by customer id",
+                "description": "Returns the bills associated with the specific customer",
+                "operationId": "ReturnsTheBillsAssociatedWithTheSpecificCustomer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            }
+        },
+        "\/data": {
+            "delete": {
+                "summary": "Delete data associated with your API key.",
+                "description": "This endpoint deletes any data associated with your API key and of the type passed in as query parameters.  If you do not specify any type to delete, no data will be deleted.",
+                "operationId": "ThisEndpointDeletesAnyDataAssociatedWithYourApiKeyAndOfTheTypePassedInAsQueryParam",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Empty Param will return all types of accounts. Type of accounts that can be fetched (options: Credit Card, Savings, Checking)"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{id}\/deposits": {
+            "get": {
+                "summary": "Get all deposits",
+                "description": "Returns the deposits that you are involved in.",
+                "operationId": "ReturnsTheDepositsThatYouAreInvolvedIn",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a deposit",
+                "description": "Creates a deposit where the account with the ID specified receives the amount.",
+                "operationId": "CreatesADepositWhereTheAccountWithTheIdSpecifiedReceivesTheAmount",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            }
+        },
+        "\/deposits\/{id}": {
+            "get": {
+                "summary": "Get deposit by id",
+                "description": "Returns the deposit with the specific id",
+                "operationId": "ReturnsTheDepositWithTheSpecificId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a specific existing deposit",
+                "description": "Updates the specific deposit",
+                "operationId": "UpdatesTheSpecificDeposit",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete a specific existing deposit",
+                "description": "Deletes the specific deposit",
+                "operationId": "DeletesTheSpecificDeposit",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{id}\/loans": {
+            "get": {
+                "summary": "Get all loans",
+                "description": "Returns the loans that you are involved in.",
+                "operationId": "ReturnsTheLoansThatYouAreInvolvedIn",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a loan",
+                "description": "Creates a loan where the account with the ID specified is debitted.",
+                "operationId": "CreatesALoanWhereTheAccountWithTheIdSpecifiedIsDebitted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            }
+        },
+        "\/loans\/{id}": {
+            "get": {
+                "summary": "Get loan by id",
+                "description": "Returns the loan with the specific id",
+                "operationId": "ReturnsTheLoanWithTheSpecificId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a specific existing loan",
+                "description": "Updates the specific loan",
+                "operationId": "UpdatesTheSpecificLoan",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete a specific existing loan",
+                "description": "Deletes the specific loan",
+                "operationId": "DeletesTheSpecificLoan",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            }
+        },
+        "\/merchants": {
+            "get": {
+                "summary": "Get all merchants",
+                "description": "Returns the merchants that have been assigned to you.",
+                "operationId": "ReturnsTheMerchantsThatHaveBeenAssignedToYou",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "lat",
+                        "in": "query",
+                        "description": "Latitude of where you're looking for an ATM. Remember Negatives for West"
+                    },
+                    {
+                        "name": "lng",
+                        "in": "query",
+                        "description": "Longitude of where you're looking for an ATM. Remember Negatives for South"
+                    },
+                    {
+                        "name": "rad",
+                        "in": "query",
+                        "description": "Search radius in miles"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a merchant",
+                "description": "Creates a merchant",
+                "operationId": "CreatesAMerchant",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            }
+        },
+        "\/merchants\/{id}": {
+            "get": {
+                "summary": "Get merchant by id",
+                "description": "Returns the merchant with the specific id",
+                "operationId": "ReturnsTheMerchantWithTheSpecificId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a specific existing merchant",
+                "description": "Updates the specific merchant",
+                "operationId": "UpdatesTheSpecificMerchant",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{id}\/purchases": {
+            "get": {
+                "summary": "Get all purchases",
+                "description": "Returns the purchases that you are involved in.",
+                "operationId": "ReturnsThePurchasesThatYouAreInvolvedIn",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a purchase",
+                "description": "Creates a purchase where the account with the ID specified is the payer.",
+                "operationId": "CreatesAPurchaseWhereTheAccountWithTheIdSpecifiedIsThePayer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            }
+        },
+        "\/purchases\/{id}": {
+            "get": {
+                "summary": "Get purchase by id",
+                "description": "Returns the purchase with the specific id",
+                "operationId": "ReturnsThePurchaseWithTheSpecificId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete a specific existing purchase",
+                "description": "Deletes the specific purchase",
+                "operationId": "DeletesTheSpecificPurchase",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a specific existing purchase",
+                "description": "Updates the specific purchase",
+                "operationId": "UpdatesTheSpecificPurchase",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            }
+        },
+        "\/merchants\/{id}\/purchases": {
+            "get": {
+                "summary": "Get all purchases by merchant",
+                "description": "Returns the purchases that a merchant is involved in.",
+                "operationId": "ReturnsThePurchasesThatAMerchantIsInvolvedIn",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            }
+        },
+        "\/merchants\/{id}\/accounts\/{accountId}\/purchases": {
+            "get": {
+                "summary": "Get all purchases by account and merchant",
+                "description": "Returns the purchases that a merchant is involved in.",
+                "operationId": "ReturnsThePurchasesThatAMerchantIsInvolvedIn",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "accountId",
+                        "in": "path",
+                        "description": "ID of the account associated with all the purchases"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{id}\/transfers": {
+            "get": {
+                "summary": "Get all transfers",
+                "description": "Returns the transfers that you are involved in.",
+                "operationId": "ReturnsTheTransfersThatYouAreInvolvedIn",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Empty Param will return all types of accounts. Type of accounts that can be fetched (options: Credit Card, Savings, Checking)"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a transfer",
+                "description": "Creates a transfer where the account with the ID specified is the payer.",
+                "operationId": "CreatesATransferWhereTheAccountWithTheIdSpecifiedIsThePayer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            }
+        },
+        "\/transfers\/{transferId}": {
+            "get": {
+                "summary": "Get transfer by id",
+                "description": "Returns the transfer with the specific id",
+                "operationId": "ReturnsTheTransferWithTheSpecificId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "transferId",
+                        "in": "path",
+                        "description": "ID of the transfer that is being fetched"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a specific existing transfer",
+                "description": "Updates the specific transfer",
+                "operationId": "UpdatesTheSpecificTransfer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "transferId",
+                        "in": "path",
+                        "description": "ID of the transfer that is being fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete a specific existing transfer",
+                "description": "Deletes the specific transfer",
+                "operationId": "DeletesTheSpecificTransfer",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "transferId",
+                        "in": "path",
+                        "description": "ID of the transfer that is being fetched"
+                    }
+                ]
+            }
+        },
+        "\/accounts\/{id}\/withdrawals": {
+            "get": {
+                "summary": "Get all withdrawals",
+                "description": "Returns the withdrawals that you are involved in.",
+                "operationId": "ReturnsTheWithdrawalsThatYouAreInvolvedIn",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Create a withdrawal",
+                "description": "Creates a withdrawal where the account with the ID specified is debitted.",
+                "operationId": "CreatesAWithdrawalWhereTheAccountWithTheIdSpecifiedIsDebitted",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            }
+        },
+        "\/withdrawals\/{id}": {
+            "get": {
+                "summary": "Get withdrawal by id",
+                "description": "Returns the withdrawal with the specific id",
+                "operationId": "ReturnsTheWithdrawalWithTheSpecificId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Update a specific existing withdrawal",
+                "description": "Updates the specific withdrawal",
+                "operationId": "UpdatesTheSpecificWithdrawal",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Updated account object"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Delete a specific existing withdrawal",
+                "description": "Deletes the specific withdrawal",
+                "operationId": "DeletesTheSpecificWithdrawal",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "ID of account that needs to be fetched"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "account": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "nickname": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "rewards": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "balance": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "account_number": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "customer_id": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "account-put": {
+                "type": "object",
+                "properties": {
+                    "nickname": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "account_number": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "account-post": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "nickname": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "rewards": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "balance": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "account_number": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "address": {
+                "type": "object",
+                "properties": {
+                    "street_number": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "street_name": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "city": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "state": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "zip": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "atm": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "language_list": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "hours": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "accessibility": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount_left": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "bill": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payee": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "nickname": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "creation_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payment_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "recurring_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "upcoming_payment_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payment_amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "account_id": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "bill-put": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payee": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "nickname": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payment_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "recurring_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payment_amount": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "bill-post": {
+                "type": "object",
+                "properties": {
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payee": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "nickname": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payment_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "recurring_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payment_amount": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "branch": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "hours": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "phone_number": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "customer": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "first_name": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "last_name": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "customer-put": {
+                "type": "object"
+            },
+            "customer-post": {
+                "type": "object",
+                "properties": {
+                    "first_name": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "last_name": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "deposit": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "transaction_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payee_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "medium": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "deposit-put": {
+                "type": "object",
+                "properties": {
+                    "medium": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "deposit-post": {
+                "type": "object",
+                "properties": {
+                    "medium": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "transaction_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "error": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "fields": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "geocode": {
+                "type": "object",
+                "properties": {
+                    "lat": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "lng": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "loan": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "creation_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "credit_score": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "monthly_payment": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "loan-put": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "credit_score": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "monthly_payment": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "loan-post": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "credit_score": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "monthly_payment": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "merchant": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "category": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "merchant-put-post": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "category": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "customer-post-success": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "account-post-success": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "bill-post-success": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "deposit-post-success": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "merchant-post-success": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "purchase-post-success": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "loan-post-success": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "transfer-post-success": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "withdrawal-post-success": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "purchase": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "merchant_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payer_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "purchase_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "medium": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "purchase-put": {
+                "type": "object",
+                "properties": {
+                    "payer_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "medium": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "purchase-post": {
+                "type": "object",
+                "properties": {
+                    "merchant_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "medium": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "purchase_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "transfer": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "transaction_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "medium": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payer_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payee_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "transfer-put": {
+                "type": "object",
+                "properties": {
+                    "medium": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payee_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "transfer-post": {
+                "type": "object",
+                "properties": {
+                    "medium": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payee_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "transaction_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "withdrawal": {
+                "type": "object",
+                "properties": {
+                    "_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "transaction_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "payer_id": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "medium": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "withdrawal-put": {
+                "type": "object",
+                "properties": {
+                    "medium": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            },
+            "withdrawal-post": {
+                "type": "object",
+                "properties": {
+                    "medium": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "transaction_date": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "amount": {
+                        "description": "",
+                        "type": "delete"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "delete"
+                    }
+                }
+            }
+        }
+    }
+}
