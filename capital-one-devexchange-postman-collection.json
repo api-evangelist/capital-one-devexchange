@@ -1,5 +1,5 @@
 {
-    "id": "fb4e6984a1984e35ab66e1f02745a9d7",
+    "id": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
     "name": "Capital One DevExchange",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "531f494dcd23fbd5fe216235df0b8eaf",
+            "id": "7f4081a658c019a6b64c7de12d46ff94",
             "name": "Get all accounts",
             "url": "httpsapi.reimaginebanking.com\/\/accounts",
             "description": "Returns the accounts that have been assigned to you.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "7b2f50a7b9f81e6a178fab16952eb3b0",
+            "id": "c1404ca3c09acaf6ba9c3d7c3f41b520",
             "name": "Get account by id",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}",
             "description": "Returns the account with the specific id",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "d37ffc6b8db96b63e498e0c00443b9dc",
+            "id": "2ee36f23013a4ea342507fd3b321cf34",
             "name": "Update a specific existing account",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}",
             "description": "Updates the specific account",
@@ -106,11 +106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "6d58d2bb7f41d64807054ef8a81eaef9",
+            "id": "d8c25dfccefe99f814e4c8c874d06e70",
             "name": "Delete a specific existing account",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}",
             "description": "Deletes the specific account",
@@ -137,11 +137,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "e6778a6e693dd557f5597fabb037e67a",
+            "id": "1155036654341920f66497ac84b8d4d4",
             "name": "Create an account",
             "url": "httpsapi.reimaginebanking.com\/\/customers\/{id}\/accounts",
             "description": "Creates an account for the customer with the id provided",
@@ -175,11 +175,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "de794105b205db764f0d69216bf0133c",
+            "id": "c3dd3a45ee382e0362751c55bcd120a8",
             "name": "Get accounts by customer id",
             "url": "httpsapi.reimaginebanking.com\/\/customers\/{id}\/accounts",
             "description": "Returns the accounts associated with the specific customer",
@@ -206,11 +206,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "eca22a2ebea47a956fd60d01886e3fe6",
+            "id": "689362ff37878acca01735da7d269102",
             "name": "Get customer that owns the specified account",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/customer",
             "description": "Returns the customer that the account belongs to.",
@@ -237,11 +237,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "4720eeb85059125a09decc30d520fa4d",
+            "id": "4a9d083538b626bbac3f9cb08831d9dd",
             "name": "Get all ATMs",
             "url": "httpsapi.reimaginebanking.com\/\/atms",
             "description": "Returns all of the Capital One ATMs in the speified search area.",
@@ -282,11 +282,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "dc5cf79c90015a17225560274ae67a91",
+            "id": "477ea1283b6b2b82b078754ab9f2e805",
             "name": "Get ATM by id",
             "url": "httpsapi.reimaginebanking.com\/\/atms\/{id}",
             "description": "Returns the ATM with the specific id",
@@ -313,11 +313,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "282849b36c9500548f0d33a849137420",
+            "id": "76dde401e0ad1eaa3b1e0f7455ac2b3a",
             "name": "Get all bills for a specific account",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/bills",
             "description": "Returns the bills that are tied to the specific account.",
@@ -344,11 +344,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "6356fefa0ea7fe595812d8ece589d82c",
+            "id": "3f1e61b354b46a865b6a5d556705a2ff",
             "name": "Create a bill",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/bills",
             "description": "Creates a bill for the specific account",
@@ -382,11 +382,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "af2485fa0b0100b60396a37ce7d04a78",
+            "id": "c73a93cdedd910e908d0d5349ce51cac",
             "name": "Get bill by id",
             "url": "httpsapi.reimaginebanking.com\/\/bills\/{billId}",
             "description": "Returns the bill with the specific id",
@@ -413,11 +413,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "2223de252ac41d70c2a5b1352a427628",
+            "id": "6834ca372cea67ce0d69758d527acde2",
             "name": "Update a specific existing bill",
             "url": "httpsapi.reimaginebanking.com\/\/bills\/{billId}",
             "description": "Updates the specific bill",
@@ -451,11 +451,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "b7a67d6022b1fa7c04a150ade987b57a",
+            "id": "d85133612dbb22c85345328477451c76",
             "name": "Delete a specific existing bill",
             "url": "httpsapi.reimaginebanking.com\/\/bills\/{billId}",
             "description": "Deletes the specific bill",
@@ -482,11 +482,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "73e8e1be95f16440b6d452e158f5f590",
+            "id": "3a8ca2eb731a9d04523c173025a96e01",
             "name": "Get all branches",
             "url": "httpsapi.reimaginebanking.com\/\/branches",
             "description": "Returns all of the Capital One branches.",
@@ -505,11 +505,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "d3ba43f1b70d680d72cc4b256f0a53b6",
+            "id": "bd95e594d1be4627cf4ebd5aa20a11d1",
             "name": "Get branch by id",
             "url": "httpsapi.reimaginebanking.com\/\/branches\/{id}",
             "description": "Returns the branch with the specific id",
@@ -536,11 +536,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "4012d89f25dbebdbf89fcf3d41215d83",
+            "id": "67941c89ace6945bed07f0f8978a6ef7",
             "name": "Get all customers",
             "url": "httpsapi.reimaginebanking.com\/\/customers",
             "description": "Returns the customers that have been assigned to you.",
@@ -559,11 +559,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "12aa48cfb51b5660f6f340f52e2bdd1f",
+            "id": "6aa53039ee17690a8e137f1a4bde3bc7",
             "name": "Create a customer",
             "url": "httpsapi.reimaginebanking.com\/\/customers",
             "description": "Creates a customer",
@@ -590,11 +590,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "46d833a2f1d0f5a19268663f41f6915c",
+            "id": "92bb2ef7a5ae1e9dcc887e5a034ca8d7",
             "name": "Get customer by id",
             "url": "httpsapi.reimaginebanking.com\/\/customers\/{id}",
             "description": "Returns the customer with the specific id",
@@ -621,11 +621,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "feb11bdb9045204bc0f142fd4644a5ea",
+            "id": "70da206eea85eb932b3630d1626a7aac",
             "name": "Update a specific existing customer",
             "url": "httpsapi.reimaginebanking.com\/\/customers\/{id}",
             "description": "Updates the specific customer",
@@ -659,11 +659,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "17cd89ae550e8c214d4992175ac15c6d",
+            "id": "bc4ba445f36cdca0e8a3a89e06c938ee",
             "name": "Get bills by customer id",
             "url": "httpsapi.reimaginebanking.com\/\/customers\/{id}\/bills",
             "description": "Returns the bills associated with the specific customer",
@@ -690,11 +690,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "6d252821145b2f4a55499b6a83ed836b",
+            "id": "63e00d4cb3656eaa593d218d3c1ef677",
             "name": "Delete data associated with your API key.",
             "url": "httpsapi.reimaginebanking.com\/\/data",
             "description": "This endpoint deletes any data associated with your API key and of the type passed in as query parameters.  If you do not specify any type to delete, no data will be deleted.",
@@ -721,11 +721,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "fef2efc3580bfa466a049496c5b36d40",
+            "id": "ba58c0be521bb753de806ee9fa5c4f2e",
             "name": "Get all deposits",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/deposits",
             "description": "Returns the deposits that you are involved in.",
@@ -752,11 +752,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "8226f143302c32a46927969bd33e5371",
+            "id": "571e6f7daeb5f377661e5829e2d63c4c",
             "name": "Create a deposit",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/deposits",
             "description": "Creates a deposit where the account with the ID specified receives the amount.",
@@ -790,11 +790,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "8523e85d27bc3a6c6d0962d342d75f5a",
+            "id": "bf305b3508518d10c4f48d825cd21c18",
             "name": "Get deposit by id",
             "url": "httpsapi.reimaginebanking.com\/\/deposits\/{id}",
             "description": "Returns the deposit with the specific id",
@@ -821,11 +821,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "520e290b2d3ddc8be21ac094f68cdff5",
+            "id": "83c13a3334cce5d61d8f1cb4b036b843",
             "name": "Update a specific existing deposit",
             "url": "httpsapi.reimaginebanking.com\/\/deposits\/{id}",
             "description": "Updates the specific deposit",
@@ -859,11 +859,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "d48185f520f8511aacde1c73b3bcee93",
+            "id": "cf51353603bc4910851f2f149010910f",
             "name": "Delete a specific existing deposit",
             "url": "httpsapi.reimaginebanking.com\/\/deposits\/{id}",
             "description": "Deletes the specific deposit",
@@ -890,11 +890,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "82a340d7311d677b8260c1c1345b6712",
+            "id": "a42bec3c914f19704db021d536b64d2c",
             "name": "Get all loans",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/loans",
             "description": "Returns the loans that you are involved in.",
@@ -921,11 +921,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "56913323d2b7065a8b1abdb83896ac2d",
+            "id": "e2b6820535a9418b6a63f66aec1b36d5",
             "name": "Create a loan",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/loans",
             "description": "Creates a loan where the account with the ID specified is debitted.",
@@ -959,11 +959,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "cd65c0e396c008b45a8d03f2cdbe3459",
+            "id": "53fe77691902fbb53bd1710851bada6a",
             "name": "Get loan by id",
             "url": "httpsapi.reimaginebanking.com\/\/loans\/{id}",
             "description": "Returns the loan with the specific id",
@@ -990,11 +990,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "ce0a33876e94e60d6c088b0f4fee0c4d",
+            "id": "d9cc627f3ac2708bdbd10ddd8a5f734c",
             "name": "Update a specific existing loan",
             "url": "httpsapi.reimaginebanking.com\/\/loans\/{id}",
             "description": "Updates the specific loan",
@@ -1028,11 +1028,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "18d8c285ca3d0716c5d395342d1f376a",
+            "id": "b79427ee3e27397b79bf402fbae37f73",
             "name": "Delete a specific existing loan",
             "url": "httpsapi.reimaginebanking.com\/\/loans\/{id}",
             "description": "Deletes the specific loan",
@@ -1059,11 +1059,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "4b81c7d3e35d477eca94b8b144cf52eb",
+            "id": "e63f05f1962ca43958d21e3c4e400556",
             "name": "Get all merchants",
             "url": "httpsapi.reimaginebanking.com\/\/merchants",
             "description": "Returns the merchants that have been assigned to you.",
@@ -1104,11 +1104,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "cf50111c90f4e71de6a0ed18d56404b1",
+            "id": "386beca4bc62707c075d61962f457e66",
             "name": "Create a merchant",
             "url": "httpsapi.reimaginebanking.com\/\/merchants",
             "description": "Creates a merchant",
@@ -1135,11 +1135,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "e0c6cfceb8180efd78fcdab1bd966cf8",
+            "id": "ecf7ca7b0f91642fb08d9dd76f5c5037",
             "name": "Get merchant by id",
             "url": "httpsapi.reimaginebanking.com\/\/merchants\/{id}",
             "description": "Returns the merchant with the specific id",
@@ -1166,11 +1166,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "32a4d24d1a5f2c86f447f6f398adc136",
+            "id": "294c02062ead1288c2a3d53713df7b18",
             "name": "Update a specific existing merchant",
             "url": "httpsapi.reimaginebanking.com\/\/merchants\/{id}",
             "description": "Updates the specific merchant",
@@ -1204,11 +1204,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "316e81b92f82ebeb589633627ad78e39",
+            "id": "b1ec5cfaede6c45dc6c23cded77dc3f5",
             "name": "Get all purchases",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/purchases",
             "description": "Returns the purchases that you are involved in.",
@@ -1235,11 +1235,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "2542f3452c53ec4dd73a460774ba2477",
+            "id": "044b177fafd2bc9cde0205de76f2eeb1",
             "name": "Create a purchase",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/purchases",
             "description": "Creates a purchase where the account with the ID specified is the payer.",
@@ -1273,11 +1273,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "2f900912afd2e8d436a2da2f07611f26",
+            "id": "d2ca80f565fb22785295824a171bdbb1",
             "name": "Get purchase by id",
             "url": "httpsapi.reimaginebanking.com\/\/purchases\/{id}",
             "description": "Returns the purchase with the specific id",
@@ -1304,11 +1304,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "392ff214936ba9b026347b2fbad43687",
+            "id": "fa9467dd3e97809bbea1af82c6e3e66e",
             "name": "Delete a specific existing purchase",
             "url": "httpsapi.reimaginebanking.com\/\/purchases\/{id}",
             "description": "Deletes the specific purchase",
@@ -1335,11 +1335,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "d3a4d65ddbb61c52d061b37b49c83f76",
+            "id": "77b87a20ff584b97c64ea80548b68176",
             "name": "Update a specific existing purchase",
             "url": "httpsapi.reimaginebanking.com\/\/purchases\/{id}",
             "description": "Updates the specific purchase",
@@ -1373,11 +1373,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "5297a84efc42fffad8a2c87794cd9e99",
+            "id": "1bd0d04482e9f3998221cecc8b7210d1",
             "name": "Get all purchases by merchant",
             "url": "httpsapi.reimaginebanking.com\/\/merchants\/{id}\/purchases",
             "description": "Returns the purchases that a merchant is involved in.",
@@ -1404,11 +1404,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "224fdbf7c956de41f87bb29ebb62c566",
+            "id": "5d4ec811f36678fc49221e71ea9131e8",
             "name": "Get all purchases by account and merchant",
             "url": "httpsapi.reimaginebanking.com\/\/merchants\/{id}\/accounts\/{accountId}\/purchases",
             "description": "Returns the purchases that a merchant is involved in.",
@@ -1442,11 +1442,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "ce275564655b640032f201ba8ac4c12e",
+            "id": "fe53fb23dc68186711d9aff20e67f6f1",
             "name": "Get all transfers",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/transfers",
             "description": "Returns the transfers that you are involved in.",
@@ -1480,11 +1480,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "0a156f86fd65fac3a7a1083051102e37",
+            "id": "0706ea5766b6fd25ee9e421a503f6adb",
             "name": "Create a transfer",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/transfers",
             "description": "Creates a transfer where the account with the ID specified is the payer.",
@@ -1518,11 +1518,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "af28330a5882d86477e14055d2c3d6b5",
+            "id": "2b0ea954eab97cb83985de458b7c1bcc",
             "name": "Get transfer by id",
             "url": "httpsapi.reimaginebanking.com\/\/transfers\/{transferId}",
             "description": "Returns the transfer with the specific id",
@@ -1549,11 +1549,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "323c14ff333de7c502056a0dbd2a4232",
+            "id": "4e399432c1f96606601efac93fca01ef",
             "name": "Update a specific existing transfer",
             "url": "httpsapi.reimaginebanking.com\/\/transfers\/{transferId}",
             "description": "Updates the specific transfer",
@@ -1587,11 +1587,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "c5cf86c45a9ddbceb431757f47e1475b",
+            "id": "fb15bda62a3c9df9003f141cf7873163",
             "name": "Delete a specific existing transfer",
             "url": "httpsapi.reimaginebanking.com\/\/transfers\/{transferId}",
             "description": "Deletes the specific transfer",
@@ -1618,11 +1618,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "cec3b36c366452e4faefd03303078560",
+            "id": "2020960ddcc69e61958973a3dcfe03fb",
             "name": "Get all withdrawals",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/withdrawals",
             "description": "Returns the withdrawals that you are involved in.",
@@ -1649,11 +1649,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "82bd6e83ed30e6693076369485bbd846",
+            "id": "7cd3376724a5a56bb07686251d82779f",
             "name": "Create a withdrawal",
             "url": "httpsapi.reimaginebanking.com\/\/accounts\/{id}\/withdrawals",
             "description": "Creates a withdrawal where the account with the ID specified is debitted.",
@@ -1687,11 +1687,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "eb263d817e4d5fa32118120bba919f2a",
+            "id": "8081802c487579d8a1792fc4d383e42b",
             "name": "Get withdrawal by id",
             "url": "httpsapi.reimaginebanking.com\/\/withdrawals\/{id}",
             "description": "Returns the withdrawal with the specific id",
@@ -1718,11 +1718,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "a1813d97ded24b495e8e19ae8ad88f97",
+            "id": "d3b02b59d535e75af74909cc834c68cd",
             "name": "Update a specific existing withdrawal",
             "url": "httpsapi.reimaginebanking.com\/\/withdrawals\/{id}",
             "description": "Updates the specific withdrawal",
@@ -1756,11 +1756,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         },
         {
-            "id": "659be8ca699d86615d49a789405f35d2",
+            "id": "cef628300b29401bb26202741e7304a8",
             "name": "Delete a specific existing withdrawal",
             "url": "httpsapi.reimaginebanking.com\/\/withdrawals\/{id}",
             "description": "Deletes the specific withdrawal",
@@ -1787,7 +1787,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "fb4e6984a1984e35ab66e1f02745a9d7",
+            "collectionId": "62cd70b0b4f7e2cbb95fa29a467e7bbb",
             "rawModeData": ""
         }
     ]
