@@ -9,8 +9,8 @@
         "service api",
         "us bank"
     ],
-    "created": "2019-12-19",
-    "modified": "2019-12-19",
+    "created": "2019-12-20",
+    "modified": "2019-12-20",
     "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/capital-one-devexchange\/master\/apis.json",
     "specificationVersion": "0.14",
     "apis": [
@@ -24,21 +24,21 @@
             "properties": [
                 {
                     "type": "x-openapi",
-                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/capital-one-devexchange.json"
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/capital-one-devexchange\/master\/capital-one-devexchange-openapi.json"
                 },
                 {
                     "type": "x-openapi",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/capital-one-devexchange-openapi.json"
-                },
-                {
-                    "type": "x-postman-collecction",
-                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/capital-one-devexchange-postman-collection.json"
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/capital-one-devexchange.json"
                 }
             ]
         }
     ],
     "include": [],
     "x-common": [
+        {
+            "type": "APIs.json",
+            "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/apis.json"
+        },
         {
             "type": "Authentication",
             "url": "https:\/\/developer.capitalone.com\/platform-documentation\/authorization-with-oauth-20\/"
